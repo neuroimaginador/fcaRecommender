@@ -1,0 +1,19 @@
+Package: fcaRecommender
+Title: Conversational Recommender using Formal Concept Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+    person(given = "Domingo",
+           family = "Lopez Rodriguez",
+           role = c("aut", "cre"),
+           email = c("dominlopez@uma.es", "neuroimaginador@gmail.com"),
+           comment = c(ORCID = "0000-0002-0172-1585")),
+    person(given = "Angel",
+           family = "Mora",
+           role = "aut",
+           email = "amorabonilla@gmail.com"))
+Description: Provides functions to create conversational recommender systems and to compute some metrics regarding their efficiency.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
