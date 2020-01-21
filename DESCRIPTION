@@ -13,6 +13,7 @@ Authors@R:
            role = "aut",
            email = "amorabonilla@gmail.com"))
 Description: Provides functions to create conversational recommender systems and to compute some metrics regarding their efficiency.
+Imports: fcaR, recommenderlab, caret
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

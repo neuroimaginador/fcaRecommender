@@ -1,5 +1,12 @@
+library(fcaR)
+library(Matrix)
 fc <- FormalContext$new(cobre32, remove_const = TRUE)
+fc$clarify(copy = FALSE)
+fc
+
 fc$find_implications()
+
+fc$implications$cardinality()
 
 dataset <- as.matrix(t(fc$I))
 implications <- fc$implications$clone()
@@ -19,5 +26,6 @@ subject <- SparseSet$new(attributes <- fc$attributes,
                          M = Matrix(S$valid[2, ], sparse = TRUE))
 
 precedence <- elicit_precedence(dataset, 
+                                class_attrs = class_attrs,
                                 subject = subject, 
                                 type = elicit_type)
